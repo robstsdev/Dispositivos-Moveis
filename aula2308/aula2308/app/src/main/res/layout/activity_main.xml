@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Esporte que pratica"
+            android:textSize="34sp" />
+
+        <CheckBox
+            android:id="@+id/chkNatacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Natação" />
+
+        <CheckBox
+            android:id="@+id/chkFutebol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Futebol" />
+
+        <CheckBox
+            android:id="@+id/chkBasquete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basquete" />
+
+        <Button
+            android:id="@+id/btnMostrarDados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mostrar"
+            android:text="Mostrar Dados" />
+
+        <Button
+            android:id="@+id/btnChamar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="chamarTela2"
+            android:text="Chamar Tela 2" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
